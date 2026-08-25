@@ -1,5 +1,7 @@
 kafka-python
 pyspark
+delta-spark
 pandas
 scikit-learn
 pytest
+python-dotenv

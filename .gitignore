@@ -1,0 +1,24 @@
+# Ignore interview preparation files
+interview_guide.md
+
+# Virtual environments
+.env
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Local spark/delta lake data 
+data/
+jars/
+spark-warehouse/
+derby/
+derby.log
+metastore_db/
+
+# MacOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/

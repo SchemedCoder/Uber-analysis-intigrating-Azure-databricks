@@ -1,9 +1,7 @@
-# Uber-analysis-intigrating-Azure-databricks
-
-# 🚀 Uber Real-Time Demand & Surge Pricing Platform
+# Uber Real-Time Demand & Surge Pricing Platform
 
 ## Overview
-Production-grade real-time data platform simulating Uber’s ride demand and surge pricing system.
+Production-grade real-time data platform implementing an event-driven architecture for ride demand tracking and surge pricing calculation.
 
 ## Features
 - Kafka-based real-time streaming
@@ -23,11 +21,13 @@ Python, Apache Kafka, PySpark, Azure Data Factory, Azure Databricks, Azure Data 
 ## Architecture
 Kafka → Databricks → Data Lake → Synapse → Power BI
 
+## Environment Variables
+Create a `.env` file in the root directory using the provided `.env.example` file to configure Azure credentials.
+
 ## Run Locally
 docker-compose up -d
 
-python kafka/producer.py  
-python streaming/stream_processor.py  
+python local_run.py
 
 ## Run Tests
 pytest tests/
@@ -37,7 +37,4 @@ pytest tests/
 - Databricks for streaming  
 - Data Lake storage  
 - Synapse warehouse  
-- Power BI dashboard  
-
-## Resume Impact
-Built a real-time data platform with streaming ETL, data warehousing, ML prediction, and BI analytics.
+- Power BI dashboard
